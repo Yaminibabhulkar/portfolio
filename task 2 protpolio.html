@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #101010;
+            color: #321f3c;
+        }
+
+        a {
+            color: #1db954;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 3em;
+            margin: auto;
+            max-width: 1000px;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 1.5em;
+            color: #6dcce8;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* About Section (Left Text, Right Image Layout) */
+        #about {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2em;
+        }
+
+        #about .intro {
+            text-align: left;
+            max-width: 60%;
+        }
+
+        #about .intro h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            color: #64bce2;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        #about .intro p {
+            font-size: 1.1em;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        #about .profile-img {
+            width:200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid #75abde;
+        }
+
+        /* Skills Section */
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 1.5em;
+        }
+
+        #skills ul li {
+            background: #f1f1f1;
+            padding: 0.8em 1.5em;
+            border-radius: 50px;
+            font-size: 1.1em;
+            color: #52b4f1;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        #skills ul li:hover {
+            transform: scale(1.1);
+        }
+
+        /* Projects Section */
+        .project {
+            margin: 2em auto;
+            text-align: left;
+            max-width: 800px;
+        }
+
+        .project img {
+            width: 50%;
+            border-radius: 10px;
+            margin-bottom: 1em;
+        }
+
+        .project h3 {
+            margin: 0.5em 0;
+            font-size: 1.8em;
+            color: #61c0ec;
+        }
+
+        .project p {
+            font-size: 1.1em;
+            color: #e5eeed;
+            line-height: 1.6;
+        }
+
+        /* Resume Section */
+        #resume a {
+            display: inline-block;
+            background: #5bc0df;
+            color: #fff;
+            padding: 0.8em 2em;
+            font-weight: bold;
+            border-radius: 30px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        #resume a:hover {
+            background: #54b0d4;
+            transform: scale(1.1);
+        }
+
+        /* Contact Section */
+        #contact p {
+            margin: 1em 0;
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        #contact .social-links a {
+            font-size: 1.3em;
+            color: #605e5e;
+            margin: 0 1em;
+            transition: color 0.3s;
+        }
+
+        #contact .social-links a:hover {
+            color: #54b7c2;
+        }
+
+        .linkedin-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        /* Footer */
+        footer {
+            background: #f1f1f1;
+            padding: 1.5em 0;
+            text-align: center;
+            font-size: 0.95em;
+            color: #666;
+            border-top: 1px solid #ccc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #about {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #about .intro {
+                max-width: 100%;
+            }
+
+            #skills ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- About Section -->
+    <section id="about">
+        <div class="intro">
+            <h1>Yamini Babhulkar</h1>
+            <p> | FRONTEND DEVELOPER | SOFTWARE ENGINEER</p>
+            <h2>Hello, I am Yamini</h2>
+            <p>Hey,I am  a passionate developer always exploring new ways to build innovative solutions. I'm currently in the third year, pursuing my   B-Tech degree from Government College of Engineering, Yavatmal, affiliated with DBATU University, and love creating intuitive web experiences. When I'm not coding, you can find me experimenting with design or learning about new technologies.</p>
+        </div>
+        <img src="me.jpg" alt="Yamini Babhulkar" class="profile-img">
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="onlinevote.jpg.png" alt="Project 1">
+            <h3>Online Voting System</h3>
+            <p>A secure and user-friendly platform for online elections, ensuring transparency and privacy.</p>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Health & Stress Management App</h3>
+            <p>An application designed to help users monitor their stress levels and provide remedies for better mental health.</p>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="resume.pdf" download>Download My Resume</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: yaminibabhulkar52@gmail.com</p>
+        
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">
+
+                <img src="link.jpg" alt="LinkedIn Icon" class="linkedin-icon">Yamini Babhulkar
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 All rights reserved.</p>
+    </footer>
+</body>
+</html>
